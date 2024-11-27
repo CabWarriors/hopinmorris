@@ -4,15 +4,15 @@ const rideSchema = new Schema(
   {
     driver: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "user",
+      ref: "User",
     },
     startLocation: {
-      type: String,
-      required: true,
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Location",
     },
     endLocation: {
-      type: String,
-      required: true,
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Location",
     },
     departureTime: {
       type: Date,
@@ -21,9 +21,11 @@ const rideSchema = new Schema(
       type: Number,
       required: true,
     },
-    passengers: [{ type: mongoose.Schema.Types.ObjectId, ref: "user" }],
+    passengers: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
   },
-  { timestamps: true }
+  { 
+    timestamps: true
+  }
 );
 
-export const Ride = models.Ride || mongoose.model("Ride", rideSchema);
+export const Ride = mongoose.model("Ride", rideSchema);

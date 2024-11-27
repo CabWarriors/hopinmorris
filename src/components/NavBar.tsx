@@ -14,8 +14,11 @@ export default async function Navbar() {
             <Link href="/" className="text-xl font-bold">
               HopInMorris
             </Link>
-            <Link href="/" className="hover:text-red-600">
+            <Link href="/" className="hover:text-blue-600">
               Home
+            </Link>
+            <Link href="/rides" className="hover:text-blue-600">
+              Rides
             </Link>
             <Link href="/chat" className="hover:text-blue-600">
             Chat

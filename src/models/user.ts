@@ -24,7 +24,8 @@ const userSchema = new Schema(
     carLicencePlate: {
       type: String,
     },
-    rides: [{ type: mongoose.Schema.Types.ObjectId, ref: "ride" }],
+    rides: [{
+      type: mongoose.Schema.Types.ObjectId, ref: "Ride" }],
   },
   { timestamps: true }
 );
