@@ -9,10 +9,40 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "bcrypt": "^5.1.1",
+=======
+    "@prisma/client": "^5.22.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "bcrypt": "^5.1.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.461.0",
+    "mongodb": "^6.11.0",
+    "mongoose": "^8.8.3",
+    "next": "15.0.3",
+    "next-auth": "^4.24.10",
+    "openai": "^4.73.1",
+    "plotly.js": "^2.35.2",
+    "prisma": "^5.22.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-plotly.js": "^2.6.0",
+    "react-spinners": "^0.14.1",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-plotly.js": "^2.6.3",
+>>>>>>> origin/main
     "eslint": "^8",
     "eslint-config-next": "15.0.3",
     "next-auth": "^4.24.10",

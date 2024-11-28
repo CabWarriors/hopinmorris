@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dcd786eb6121b370fb9c734c59d3e66b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dcd786eb6121b370fb9c734c59d3e66b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dcd786eb6121b370fb9c734c59d3e66b = L.map(
+                "map_dcd786eb6121b370fb9c734c59d3e66b",
+                {
+                    center: [50.8882, 5.9795],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c65a11a4da7b5e61f981f4a0e62af0eb = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_c65a11a4da7b5e61f981f4a0e62af0eb.addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var marker_079096d6438748c1639e5e4651ffea51 = L.marker(
+                [50.77, 6.09],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_6bc83ebe46295be6c331de90915e95cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_079096d6438748c1639e5e4651ffea51.setIcon(icon_6bc83ebe46295be6c331de90915e95cf);
+        
+    
+        var popup_4fc7de0b70dd64bff7c826512f72c182 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26749849e2093e695a95ca685b79017f = $(`<div id="html_26749849e2093e695a95ca685b79017f" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Lucas<br>     <b>Hour:</b> 07:30<br>     <b>Available Seats:</b> 1<br>     <b>CO2 Savings:</b> 1.5 kg<br>     </div>`)[0];
+                popup_4fc7de0b70dd64bff7c826512f72c182.setContent(html_26749849e2093e695a95ca685b79017f);
+            
+        
+
+        marker_079096d6438748c1639e5e4651ffea51.bindPopup(popup_4fc7de0b70dd64bff7c826512f72c182)
+        ;
+
+        
+    
+    
+            var marker_825b79310b2ed1c24d1ef94fbd355579 = L.marker(
+                [50.89, 5.98],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_47cc55f0fc38b92a0af98ac84bbcb818 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_825b79310b2ed1c24d1ef94fbd355579.setIcon(icon_47cc55f0fc38b92a0af98ac84bbcb818);
+        
+    
+        var popup_5efb80e0b47330432456040b94591f30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25c347c59b78537e4a2bd063175b0cf0 = $(`<div id="html_25c347c59b78537e4a2bd063175b0cf0" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Hadi<br>     <b>Hour:</b> 07:30<br>     <b>Available Seats:</b> 1<br>     <b>CO2 Savings:</b> 1.03 kg<br>     </div>`)[0];
+                popup_5efb80e0b47330432456040b94591f30.setContent(html_25c347c59b78537e4a2bd063175b0cf0);
+            
+        
+
+        marker_825b79310b2ed1c24d1ef94fbd355579.bindPopup(popup_5efb80e0b47330432456040b94591f30)
+        ;
+
+        
+    
+    
+            var marker_d37431672f7255ade589aaaf1f6705ce = L.marker(
+                [50.9, 5.98],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_1c04bee0bbf67721039fb7d49a2d08c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d37431672f7255ade589aaaf1f6705ce.setIcon(icon_1c04bee0bbf67721039fb7d49a2d08c0);
+        
+    
+        var popup_049248f452990715aff96153678c1db6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_773b72e49939847ba05e8616a38edf1f = $(`<div id="html_773b72e49939847ba05e8616a38edf1f" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Gabi<br>     <b>Hour:</b> 07:30<br>     <b>Available Seats:</b> 2<br>     <b>CO2 Savings:</b> 1.16 kg<br>     </div>`)[0];
+                popup_049248f452990715aff96153678c1db6.setContent(html_773b72e49939847ba05e8616a38edf1f);
+            
+        
+
+        marker_d37431672f7255ade589aaaf1f6705ce.bindPopup(popup_049248f452990715aff96153678c1db6)
+        ;
+
+        
+    
+    
+            var marker_7636d521969d1a0c495a1e5def2bd48c = L.marker(
+                [50.9, 5.97],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_4a495515025aff5e9f73f8c741e8e1bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7636d521969d1a0c495a1e5def2bd48c.setIcon(icon_4a495515025aff5e9f73f8c741e8e1bf);
+        
+    
+        var popup_53a26707fa735ac3c065e85f1f9fd57d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c6a4e09378ff4cbfbaa969a4bd7f035 = $(`<div id="html_6c6a4e09378ff4cbfbaa969a4bd7f035" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Stefan<br>     <b>Hour:</b> 08:00<br>     <b>Available Seats:</b> 2<br>     <b>CO2 Savings:</b> 1.22 kg<br>     </div>`)[0];
+                popup_53a26707fa735ac3c065e85f1f9fd57d.setContent(html_6c6a4e09378ff4cbfbaa969a4bd7f035);
+            
+        
+
+        marker_7636d521969d1a0c495a1e5def2bd48c.bindPopup(popup_53a26707fa735ac3c065e85f1f9fd57d)
+        ;
+
+        
+    
+    
+            var marker_ba0f21a3b96e737306b3f0d0a1b9e548 = L.marker(
+                [50.9, 5.96],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_4c9757e5022d6f3e3d6a1a98ac2fcdec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ba0f21a3b96e737306b3f0d0a1b9e548.setIcon(icon_4c9757e5022d6f3e3d6a1a98ac2fcdec);
+        
+    
+        var popup_40377b7b3e880201bc5abfbed4e40a2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_903b1a82d9eb7f3c7009e73401ed967a = $(`<div id="html_903b1a82d9eb7f3c7009e73401ed967a" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Ali<br>     <b>Hour:</b> 08:00<br>     <b>Available Seats:</b> 1<br>     <b>CO2 Savings:</b> 1.26 kg<br>     </div>`)[0];
+                popup_40377b7b3e880201bc5abfbed4e40a2a.setContent(html_903b1a82d9eb7f3c7009e73401ed967a);
+            
+        
+
+        marker_ba0f21a3b96e737306b3f0d0a1b9e548.bindPopup(popup_40377b7b3e880201bc5abfbed4e40a2a)
+        ;
+
+        
+    
+    
+            var marker_ba3a302dfa8f9c8af956c4aca0ac63ce = L.marker(
+                [50.89, 6.0],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_4e946ef3d9284a2d211b2f153c095c37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ba3a302dfa8f9c8af956c4aca0ac63ce.setIcon(icon_4e946ef3d9284a2d211b2f153c095c37);
+        
+    
+        var popup_224524e49d200123798f863a5be4b8e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c878d862fe69ec9c13f4abe0e2669631 = $(`<div id="html_c878d862fe69ec9c13f4abe0e2669631" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Roya<br>     <b>Hour:</b> 08:00<br>     <b>Available Seats:</b> 3<br>     <b>CO2 Savings:</b> 0.98 kg<br>     </div>`)[0];
+                popup_224524e49d200123798f863a5be4b8e0.setContent(html_c878d862fe69ec9c13f4abe0e2669631);
+            
+        
+
+        marker_ba3a302dfa8f9c8af956c4aca0ac63ce.bindPopup(popup_224524e49d200123798f863a5be4b8e0)
+        ;
+
+        
+    
+    
+            var marker_7d38f921196c77c4b08da8cde3ce079b = L.marker(
+                [50.86, 6.01],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_f30c85f1b32bca31c40f6c7e65214210 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7d38f921196c77c4b08da8cde3ce079b.setIcon(icon_f30c85f1b32bca31c40f6c7e65214210);
+        
+    
+        var popup_2c2d8469855eed9b7a56a91972bb26bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a354b3ff242857f23770c2e9126cfed9 = $(`<div id="html_a354b3ff242857f23770c2e9126cfed9" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Janina<br>     <b>Hour:</b> 08:00<br>     <b>Available Seats:</b> 3<br>     <b>CO2 Savings:</b> 0.38 kg<br>     </div>`)[0];
+                popup_2c2d8469855eed9b7a56a91972bb26bb.setContent(html_a354b3ff242857f23770c2e9126cfed9);
+            
+        
+
+        marker_7d38f921196c77c4b08da8cde3ce079b.bindPopup(popup_2c2d8469855eed9b7a56a91972bb26bb)
+        ;
+
+        
+    
+    
+            var marker_e058d5f73cf36d4776d925feb5b37444 = L.marker(
+                [50.78, 6.08],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_0391213fd8c516e1cedfe54c22547d1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e058d5f73cf36d4776d925feb5b37444.setIcon(icon_0391213fd8c516e1cedfe54c22547d1d);
+        
+    
+        var popup_cd18d1f073cc391669034a13ffa4077a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd29eb083004071dc8a688b5fc876a46 = $(`<div id="html_cd29eb083004071dc8a688b5fc876a46" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Emily<br>     <b>Hour:</b> 08:30<br>     <b>Available Seats:</b> 1<br>     <b>CO2 Savings:</b> 0.7 kg<br>     </div>`)[0];
+                popup_cd18d1f073cc391669034a13ffa4077a.setContent(html_cd29eb083004071dc8a688b5fc876a46);
+            
+        
+
+        marker_e058d5f73cf36d4776d925feb5b37444.bindPopup(popup_cd18d1f073cc391669034a13ffa4077a)
+        ;
+
+        
+    
+    
+            var marker_22a00716f79cd205f890c4cc3746e999 = L.marker(
+                [50.84, 6.08],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_3ffcc5ce4e7a96e8932a62f2d382e6c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_22a00716f79cd205f890c4cc3746e999.setIcon(icon_3ffcc5ce4e7a96e8932a62f2d382e6c2);
+        
+    
+        var popup_10c8d58684a1fb59e478cc3fe712086b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a9ac7bcc844c067c30bec6077f8b192 = $(`<div id="html_9a9ac7bcc844c067c30bec6077f8b192" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Jost<br>     <b>Hour:</b> 08:30<br>     <b>Available Seats:</b> 1<br>     <b>CO2 Savings:</b> 0.68 kg<br>     </div>`)[0];
+                popup_10c8d58684a1fb59e478cc3fe712086b.setContent(html_9a9ac7bcc844c067c30bec6077f8b192);
+            
+        
+
+        marker_22a00716f79cd205f890c4cc3746e999.bindPopup(popup_10c8d58684a1fb59e478cc3fe712086b)
+        ;
+
+        
+    
+    
+            var marker_6759acd8c8865f7aa7fe1eeb3fb53327 = L.marker(
+                [50.83, 6.08],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_65cf31ccc491c0a412f009dfbb18d65f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6759acd8c8865f7aa7fe1eeb3fb53327.setIcon(icon_65cf31ccc491c0a412f009dfbb18d65f);
+        
+    
+        var popup_8a5234597527e92065ada32e15a170ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1fdf4b6b0e5d6f7f11462566e10365f8 = $(`<div id="html_1fdf4b6b0e5d6f7f11462566e10365f8" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Muayad<br>     <b>Hour:</b> 08:30<br>     <b>Available Seats:</b> 3<br>     <b>CO2 Savings:</b> 0.7 kg<br>     </div>`)[0];
+                popup_8a5234597527e92065ada32e15a170ad.setContent(html_1fdf4b6b0e5d6f7f11462566e10365f8);
+            
+        
+
+        marker_6759acd8c8865f7aa7fe1eeb3fb53327.bindPopup(popup_8a5234597527e92065ada32e15a170ad)
+        ;
+
+        
+    
+    
+            var marker_a4570c23bb78fd02b7d0afc343f0f8b7 = L.marker(
+                [50.78, 6.09],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_edcedd0b3e10f7aa2a149c498cfddadf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a4570c23bb78fd02b7d0afc343f0f8b7.setIcon(icon_edcedd0b3e10f7aa2a149c498cfddadf);
+        
+    
+        var popup_cb27e0b665872703caa74ca4945198ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f40b8436e3c555e44b88038463632bf = $(`<div id="html_0f40b8436e3c555e44b88038463632bf" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Raùl<br>     <b>Hour:</b> 08:30<br>     <b>Available Seats:</b> 1<br>     <b>CO2 Savings:</b> 1.33 kg<br>     </div>`)[0];
+                popup_cb27e0b665872703caa74ca4945198ad.setContent(html_0f40b8436e3c555e44b88038463632bf);
+            
+        
+
+        marker_a4570c23bb78fd02b7d0afc343f0f8b7.bindPopup(popup_cb27e0b665872703caa74ca4945198ad)
+        ;
+
+        
+    
+    
+            var marker_179db199445cad3859ec52f638670dc6 = L.marker(
+                [50.84, 6.02],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_373e9f0901f801e07b925fe41425a3d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "industry", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_179db199445cad3859ec52f638670dc6.setIcon(icon_373e9f0901f801e07b925fe41425a3d8);
+        
+    
+        var popup_af097ce615dfbaebe0276a60aeae7de9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0411cb38b5bdf4dd1f80cba4e78fd25 = $(`<div id="html_d0411cb38b5bdf4dd1f80cba4e78fd25" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Lucas<br>     <b>Hour:</b> 17:30<br>     <b>Available Seats:</b> 1<br>     <b>CO2 Savings:</b> 1.5 kg<br>     </div>`)[0];
+                popup_af097ce615dfbaebe0276a60aeae7de9.setContent(html_d0411cb38b5bdf4dd1f80cba4e78fd25);
+            
+        
+
+        marker_179db199445cad3859ec52f638670dc6.bindPopup(popup_af097ce615dfbaebe0276a60aeae7de9)
+        ;
+
+        
+    
+    
+            var marker_412f5d93e0c9d8273d4d5876c6aa6f22 = L.marker(
+                [50.84, 6.02],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_c28bd64499bf5afa881b20a2b6982e4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "industry", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_412f5d93e0c9d8273d4d5876c6aa6f22.setIcon(icon_c28bd64499bf5afa881b20a2b6982e4a);
+        
+    
+        var popup_f87558a35069caf052d5420d851a97d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5926a0701eb1a5e2ade26375497ca6d2 = $(`<div id="html_5926a0701eb1a5e2ade26375497ca6d2" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Hadi<br>     <b>Hour:</b> 17:30<br>     <b>Available Seats:</b> 2<br>     <b>CO2 Savings:</b> 1.03 kg<br>     </div>`)[0];
+                popup_f87558a35069caf052d5420d851a97d3.setContent(html_5926a0701eb1a5e2ade26375497ca6d2);
+            
+        
+
+        marker_412f5d93e0c9d8273d4d5876c6aa6f22.bindPopup(popup_f87558a35069caf052d5420d851a97d3)
+        ;
+
+        
+    
+    
+            var marker_a81df70075e60d1f16777840a5d8ecd9 = L.marker(
+                [50.84, 6.02],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_8cbfe8f34b27c34da5c57174ebc86f11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "industry", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a81df70075e60d1f16777840a5d8ecd9.setIcon(icon_8cbfe8f34b27c34da5c57174ebc86f11);
+        
+    
+        var popup_e10893f85b857968e03f2367cbbc3367 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f70e5dfaef8f53e9aa5b8a24650f1f92 = $(`<div id="html_f70e5dfaef8f53e9aa5b8a24650f1f92" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Gabi<br>     <b>Hour:</b> 17:30<br>     <b>Available Seats:</b> 3<br>     <b>CO2 Savings:</b> 1.16 kg<br>     </div>`)[0];
+                popup_e10893f85b857968e03f2367cbbc3367.setContent(html_f70e5dfaef8f53e9aa5b8a24650f1f92);
+            
+        
+
+        marker_a81df70075e60d1f16777840a5d8ecd9.bindPopup(popup_e10893f85b857968e03f2367cbbc3367)
+        ;
+
+        
+    
+    
+            var marker_628c5f4c48eec97111384b124b415f09 = L.marker(
+                [50.84, 6.02],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_ab78d5f7c70439a48714993da24bc335 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "industry", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_628c5f4c48eec97111384b124b415f09.setIcon(icon_ab78d5f7c70439a48714993da24bc335);
+        
+    
+        var popup_dc130788ba9800d6247dabe90773bd29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_172cc691aa4af623ffa3778083180941 = $(`<div id="html_172cc691aa4af623ffa3778083180941" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Stefan<br>     <b>Hour:</b> 17:30<br>     <b>Available Seats:</b> 3<br>     <b>CO2 Savings:</b> 1.22 kg<br>     </div>`)[0];
+                popup_dc130788ba9800d6247dabe90773bd29.setContent(html_172cc691aa4af623ffa3778083180941);
+            
+        
+
+        marker_628c5f4c48eec97111384b124b415f09.bindPopup(popup_dc130788ba9800d6247dabe90773bd29)
+        ;
+
+        
+    
+    
+            var marker_d1db9e3b116c72c362c9606afb0eecc6 = L.marker(
+                [50.84, 6.02],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_3d7a6ed94ef65e8f9529795df131c20a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "industry", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d1db9e3b116c72c362c9606afb0eecc6.setIcon(icon_3d7a6ed94ef65e8f9529795df131c20a);
+        
+    
+        var popup_0f6778cbb57e6e418f755ee26a9708f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9d5ff18cfc3aaa154249a416bb1f23c = $(`<div id="html_b9d5ff18cfc3aaa154249a416bb1f23c" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Ali<br>     <b>Hour:</b> 17:30<br>     <b>Available Seats:</b> 4<br>     <b>CO2 Savings:</b> 1.26 kg<br>     </div>`)[0];
+                popup_0f6778cbb57e6e418f755ee26a9708f2.setContent(html_b9d5ff18cfc3aaa154249a416bb1f23c);
+            
+        
+
+        marker_d1db9e3b116c72c362c9606afb0eecc6.bindPopup(popup_0f6778cbb57e6e418f755ee26a9708f2)
+        ;
+
+        
+    
+    
+            var marker_ddc01c7d7d82de1bc2e1dae7b98b6f30 = L.marker(
+                [50.84, 6.02],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_634f8eadbda727c0c459501cb0fe5159 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "industry", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ddc01c7d7d82de1bc2e1dae7b98b6f30.setIcon(icon_634f8eadbda727c0c459501cb0fe5159);
+        
+    
+        var popup_6e6e49c21539890f3ec27c2ed7ef33a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4d089f61b0dce4640e305bd0638ed18 = $(`<div id="html_a4d089f61b0dce4640e305bd0638ed18" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Roya<br>     <b>Hour:</b> 17:30<br>     <b>Available Seats:</b> 2<br>     <b>CO2 Savings:</b> 0.98 kg<br>     </div>`)[0];
+                popup_6e6e49c21539890f3ec27c2ed7ef33a8.setContent(html_a4d089f61b0dce4640e305bd0638ed18);
+            
+        
+
+        marker_ddc01c7d7d82de1bc2e1dae7b98b6f30.bindPopup(popup_6e6e49c21539890f3ec27c2ed7ef33a8)
+        ;
+
+        
+    
+    
+            var marker_2f57fcfe7ce5532cf0337c3c26ae0ecd = L.marker(
+                [50.84, 6.02],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_d1cecb072727f59c548a73f8a42b459e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "industry", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2f57fcfe7ce5532cf0337c3c26ae0ecd.setIcon(icon_d1cecb072727f59c548a73f8a42b459e);
+        
+    
+        var popup_d79edcaf0ff382a94b02f84132303bf5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4474cd490d297fb3b70882d2061c4bf3 = $(`<div id="html_4474cd490d297fb3b70882d2061c4bf3" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Janina<br>     <b>Hour:</b> 18:00<br>     <b>Available Seats:</b> 2<br>     <b>CO2 Savings:</b> 0.38 kg<br>     </div>`)[0];
+                popup_d79edcaf0ff382a94b02f84132303bf5.setContent(html_4474cd490d297fb3b70882d2061c4bf3);
+            
+        
+
+        marker_2f57fcfe7ce5532cf0337c3c26ae0ecd.bindPopup(popup_d79edcaf0ff382a94b02f84132303bf5)
+        ;
+
+        
+    
+    
+            var marker_8679c7eba065caf3afc51ba086fcb24c = L.marker(
+                [50.84, 6.02],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_39bb35013ab469ecf9cf85dd04dbd19c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "industry", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8679c7eba065caf3afc51ba086fcb24c.setIcon(icon_39bb35013ab469ecf9cf85dd04dbd19c);
+        
+    
+        var popup_b1ac6e0448de7034c011eacf259db7e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4913c2d874af961e892ca1f66f046d86 = $(`<div id="html_4913c2d874af961e892ca1f66f046d86" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Emily<br>     <b>Hour:</b> 18:00<br>     <b>Available Seats:</b> 2<br>     <b>CO2 Savings:</b> 0.7 kg<br>     </div>`)[0];
+                popup_b1ac6e0448de7034c011eacf259db7e7.setContent(html_4913c2d874af961e892ca1f66f046d86);
+            
+        
+
+        marker_8679c7eba065caf3afc51ba086fcb24c.bindPopup(popup_b1ac6e0448de7034c011eacf259db7e7)
+        ;
+
+        
+    
+    
+            var marker_056051e373ffdde8ec8636e0c1b047e4 = L.marker(
+                [50.84, 6.02],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_57a85cd687de292cde4c2a3116c1a87f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "industry", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_056051e373ffdde8ec8636e0c1b047e4.setIcon(icon_57a85cd687de292cde4c2a3116c1a87f);
+        
+    
+        var popup_8b0a65a005b1a3839a145d0352e410e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2db772e95cc30a2b3f740c1abf7779c5 = $(`<div id="html_2db772e95cc30a2b3f740c1abf7779c5" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Jost<br>     <b>Hour:</b> 18:00<br>     <b>Available Seats:</b> 2<br>     <b>CO2 Savings:</b> 0.68 kg<br>     </div>`)[0];
+                popup_8b0a65a005b1a3839a145d0352e410e7.setContent(html_2db772e95cc30a2b3f740c1abf7779c5);
+            
+        
+
+        marker_056051e373ffdde8ec8636e0c1b047e4.bindPopup(popup_8b0a65a005b1a3839a145d0352e410e7)
+        ;
+
+        
+    
+    
+            var marker_0b87be3ee4d03b9272bde75dc6626bfd = L.marker(
+                [50.84, 6.02],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_e3048d9aa9ac77b37340c006dae78a80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "industry", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0b87be3ee4d03b9272bde75dc6626bfd.setIcon(icon_e3048d9aa9ac77b37340c006dae78a80);
+        
+    
+        var popup_2fbaf712f6704821d9c751edfc10c17f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_962a9cc7dc58133ef8b83d2d86d1a79f = $(`<div id="html_962a9cc7dc58133ef8b83d2d86d1a79f" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Muayad<br>     <b>Hour:</b> 17:00<br>     <b>Available Seats:</b> 2<br>     <b>CO2 Savings:</b> 0.7 kg<br>     </div>`)[0];
+                popup_2fbaf712f6704821d9c751edfc10c17f.setContent(html_962a9cc7dc58133ef8b83d2d86d1a79f);
+            
+        
+
+        marker_0b87be3ee4d03b9272bde75dc6626bfd.bindPopup(popup_2fbaf712f6704821d9c751edfc10c17f)
+        ;
+
+        
+    
+    
+            var marker_b653c77166bbfbcacfa5ad91de2e9549 = L.marker(
+                [50.84, 6.02],
+                {}
+            ).addTo(map_dcd786eb6121b370fb9c734c59d3e66b);
+        
+    
+            var icon_c8e30e55694eb8a48c554057ecb4f06d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "industry", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b653c77166bbfbcacfa5ad91de2e9549.setIcon(icon_c8e30e55694eb8a48c554057ecb4f06d);
+        
+    
+        var popup_0200d382b72f9ee3c1cd28e1e50d1f0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f945606f373f278ce5c19c2964cd81d = $(`<div id="html_7f945606f373f278ce5c19c2964cd81d" style="width: 100.0%; height: 100.0%;">     <b>Driver:</b> Raùl<br>     <b>Hour:</b> 17:00<br>     <b>Available Seats:</b> 2<br>     <b>CO2 Savings:</b> 1.33 kg<br>     </div>`)[0];
+                popup_0200d382b72f9ee3c1cd28e1e50d1f0e.setContent(html_7f945606f373f278ce5c19c2964cd81d);
+            
+        
+
+        marker_b653c77166bbfbcacfa5ad91de2e9549.bindPopup(popup_0200d382b72f9ee3c1cd28e1e50d1f0e)
+        ;
+
+        
+    
+</script>
+</html>
